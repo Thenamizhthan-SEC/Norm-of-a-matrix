@@ -13,20 +13,28 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 # Register No: 25003780
 # Developed By: Thenamizhthan V
 # 1-Norm of a Matrix
-<img width="1191" height="320" alt="exp 7 (i)" src="https://github.com/user-attachments/assets/700afc18-9266-4191-aca7-c5e2a2f4b28c" />
 
-
-
+import numpy as np
+mat = np.array(eval(input()))
+ans = np.linalg.norm(mat,1)
+norm_matrix = "{:.2f}".format(ans)
+print(norm_matrix)
 
 # 2-Norm of a Matrix
-<img width="1189" height="332" alt="(ii)" src="https://github.com/user-attachments/assets/fbcfa9e3-1053-4372-af64-4b3375ee5dce" />
 
-
-
+import numpy as np
+mat=np.array(eval(input()))
+ans = np.linalg.norm(mat,2)
+norm_matrix = "{:.2f}".format(ans)
+print(norm_matrix)
 
 # Infinity Norm of a Matrix
-<img width="1186" height="424" alt="(iii)" src="https://github.com/user-attachments/assets/17a1e496-0463-4504-b13d-e9180260728e" />
 
+import numpy as np
+mat = np.array(eval(input()))
+ans = np.linalg.norm(mat,np.inf)
+norm_matrix="{:.2f}".format(ans)
+print(norm_matrix)
 
 
 
